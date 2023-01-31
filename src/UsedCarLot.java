@@ -31,6 +31,11 @@ public class UsedCarLot
     // this method MODIFIES the state of the object (its inventory)
     public void swap(int idx1, int idx2)
     {
-
+        if (inventory.size() > idx1 && inventory.size() > idx2)
+        {
+            Car car = inventory.get(idx1);
+            inventory.set(idx1, inventory.get(idx2));
+            inventory.set(idx2, car);
+        }
     }
 }
