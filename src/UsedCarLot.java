@@ -9,19 +9,19 @@ public class UsedCarLot
     // sets inventory to an empty ArrayList of Cars
     public UsedCarLot()
     {
-        /* IMPLEMENT ME! */
+        inventory = new ArrayList<Car>();
     }
 
     // getter method: returns the inventory
     public ArrayList<Car> getInventory()
     {
-        /* IMPLEMENT ME! */
+        return inventory;
     }
 
     // adds a Car to the end of the inventory list
     public void addCar(Car carToAdd)
     {
-        /* IMPLEMENT ME! */
+        inventory.add(carToAdd);
     }
 
     // swaps the Car at idx1 with the Car at idx2 in inventory;
@@ -31,6 +31,6 @@ public class UsedCarLot
     // this method MODIFIES the state of the object (its inventory)
     public void swap(int idx1, int idx2)
     {
-        /* IMPLEMENT ME! */
+
     }
 }
